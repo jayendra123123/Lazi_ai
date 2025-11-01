@@ -10,13 +10,13 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://my-app-ruddy-five-14.vercel.app", "https://my-7vmutctk1-jayendra123123s-projects.vercel.app"],
+    origin: ["https://my-app-ruddy-five-14.vercel.app", "https://my-7vmutctk1-jayendra123123s-projects.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"]
   }
 });
 
 app.use(cors({
-  origin: ["http://localhost:3000", "https://my-app-ruddy-five-14.vercel.app", "https://my-7vmutctk1-jayendra123123s-projects.vercel.app"]
+  origin: ["https://my-app-ruddy-five-14.vercel.app"]
 }));
 app.use(express.json());
 
