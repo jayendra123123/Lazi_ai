@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = 'http://localhost:5000';
+const SOCKET_URL = process.env.REACT_APP_API_URL?.replace('/api', '') || 'https://my-1lqy1npyw-jayendra123123s-projects.vercel.app';
 
 class SocketService {
   constructor() {
