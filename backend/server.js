@@ -10,13 +10,15 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://my-app-ruddy-five-14.vercel.app", "https://my-7vmutctk1-jayendra123123s-projects.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE"]
+    origin: ["http://localhost:3000", "https://my-app-ruddy-five-14.vercel.app", "https://my-7vmutctk1-jayendra123123s-projects.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
   }
 });
 
 app.use(cors({
-  origin: ["https://my-app-ruddy-five-14.vercel.app"]
+  origin: ["http://localhost:3000", "https://my-app-ruddy-five-14.vercel.app", "https://my-7vmutctk1-jayendra123123s-projects.vercel.app"],
+  credentials: true
 }));
 app.use(express.json());
 

@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = process.env.REACT_APP_API_URL?.replace('/api', '') || 'https://my-app-ruddy-five-14.vercel.app/';
+const SOCKET_URL = process.env.REACT_APP_API_URL?.replace('/api', '') || 'https://lazi-ai.onrender.com';
 
 class SocketService {
   constructor() {
