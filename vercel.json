@@ -1,5 +1,0 @@
-{
-  "buildCommand": "cd my-app && npm run build",
-  "outputDirectory": "my-app/build",
-  "installCommand": "npm --prefix my-app install"
-}
